@@ -1,6 +1,9 @@
 # DhlExpressGlobal
 
-TODO: Write a gem description
+TODO: 
+- Write a gem description
+- add documentation
+- add Rate Request class
 
 ## Installation
 
