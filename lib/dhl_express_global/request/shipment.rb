@@ -72,7 +72,7 @@ module DhlExpressGlobal
       def add_international_detail(xml)
         xml.InternationalDetail {
           xml.Commodities {
-            xml.NumberOfPieces @commodities[:number_of_pieces]
+            xml.NumberOfPieces @commodities[:number_of_pieces] if @commodities[:number_of_pieces]
             xml.Description @commodities[:description]
             xml.CountryOfManufacture @commodities[:country_of_manufacture] if @commodities[:country_of_manufacture]
             xml.Quantity @commodities[:quantity] if @commodities[:quantity]
