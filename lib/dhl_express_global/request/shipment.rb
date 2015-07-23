@@ -10,7 +10,7 @@ module DhlExpressGlobal
         @international_detail = options[:international_detail]
         requires!(@international_detail, :commodities)
         @commodities = @international_detail[:commodities]
-        requires!(@commodities, :number_of_pieces, :description, :customs_value)
+        requires!(@commodities, :description, :customs_value)
         @payment_info = options[:payment_info]
         @label_specification = {
           :image_type => 'PDF',
