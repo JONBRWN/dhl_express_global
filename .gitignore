@@ -12,3 +12,5 @@
 *.o
 *.a
 mkmf.log
+dhl_credentials.yml
+spec/vcr
