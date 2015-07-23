@@ -1,5 +1,7 @@
-require "dhl_express_global/version"
+require 'dhl_express_global/shipment'
 
 module DhlExpressGlobal
-  # Your code goes here...
+  require 'dhl_express_global/version'
+  #Exceptions: DhlExpressGlobal::RateError
+  class RateError < StandardError; end
 end
